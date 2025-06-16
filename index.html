@@ -28,6 +28,22 @@
     </ul>
   </section>
 
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>This very portfolio you're viewing! Built using HTML, CSS, and JavaScript to showcase my skills, education, and contact info.</p>
+      <a href="https://skpahadi-devfolio.github.io" target="_blank">View Portfolio</a>
+    </div>
+
+    <div class="project">
+      <h3>Quiz App</h3>
+      <p>An interactive quiz application built with HTML, CSS, and JavaScript. Users can select answers, see scores, and retry the quiz.</p>
+      <a href="https://skpahadi-devfolio.github.io/quiz-app/" target="_blank">View Quiz App</a>
+    </div>
+  </section>
+
   <section id="education">
     <h2>Education</h2>
     <p><strong>Modern College of Professional Studies</strong>, Mohan Nagar, Ghaziabad</p>
@@ -45,15 +61,25 @@
     <p>Phone: <a href="tel:+919582579119">9582579119</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/sandeep-kohli-b1064b32a" target="_blank">Sandeep Kohli</a></p>
     <p>GitHub: <a href="https://skpahadi-devfolio.github.io" target="_blank">View Portfolio</a></p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
+
+    <!-- ✅ Working Contact Form (FormSubmit) -->
+    <form action="https://formsubmit.co/sandeepkohli180@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Optional redirect after submission -->
+      <!-- <input type="hidden" name="_next" value="https://skpahadi-devfolio.github.io/thankyou.html"> -->
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
+
   <footer>
-    <p>© 2025 Sandeep Kohli. All rights reserved.</p>
+    <p>© <span id="year">2025</span> Sandeep Kohli. All rights reserved.</p>
   </footer>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
