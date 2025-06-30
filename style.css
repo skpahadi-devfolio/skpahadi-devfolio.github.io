@@ -1,4 +1,4 @@
-/* Reset & Font */
+/* ✅ Reset & Font */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 
-/* Animated Gradient Background */
+/* ✅ Animated Gradient Background */
 body {
   background: linear-gradient(-45deg, #1e1e2f, #24243e, #0f0c29, #302b63);
   background-size: 400% 400%;
@@ -23,14 +23,14 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Navbar */
+/* ✅ Navbar */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: rgba(17, 17, 17, 0.7);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   z-index: 1000;
   padding: 14px 0;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
@@ -39,9 +39,10 @@ body {
 .navbar ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
-  flex-wrap: wrap;
   padding: 0 15px;
 }
 
@@ -75,10 +76,10 @@ body {
   color: #00bfff;
 }
 
-/* Hero */
+/* ✅ Hero */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 160px 20px 80px;
   background: transparent;
 }
 
@@ -93,7 +94,7 @@ body {
   color: #ccc;
 }
 
-/* Typing animation styles */
+/* ✅ Typing Effect */
 #typing-text {
   font-size: 1.3rem;
   color: #ccc;
@@ -106,12 +107,10 @@ body {
 }
 
 @keyframes typing-blink {
-  50% {
-    border-color: transparent;
-  }
+  50% { border-color: transparent; }
 }
 
-/* Section Reveal Animation */
+/* ✅ Section Reveal */
 .section {
   padding: 40px 20px;
   max-width: 900px;
@@ -126,7 +125,7 @@ body {
   transform: translateY(0);
 }
 
-/* Glassy Section Card Style */
+/* ✅ Section Cards */
 .section-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -134,10 +133,8 @@ body {
   padding: 30px;
   box-shadow: 0 0 25px rgba(0,0,0,0.3);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
-/* Section Headers */
 .section-card h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -147,7 +144,7 @@ body {
   padding-bottom: 5px;
 }
 
-/* Skill Cards */
+/* ✅ Skills */
 .skill-cards {
   display: flex;
   justify-content: center;
@@ -185,7 +182,7 @@ body {
   margin: 0;
 }
 
-/* Project Cards */
+/* ✅ Project Cards */
 .project-grid.no-image {
   display: flex;
   flex-wrap: wrap;
@@ -236,7 +233,7 @@ body {
   background: #0077cc;
 }
 
-/* Education Card */
+/* ✅ Education & Experience */
 .edu-card {
   background: rgba(255,255,255,0.08);
   padding: 20px;
@@ -244,13 +241,12 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Experience List */
 #experience ul {
   margin-top: 10px;
   padding-left: 20px;
 }
 
-/* Contact Form */
+/* ✅ Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -286,7 +282,7 @@ form button:hover {
   background: #0056b3;
 }
 
-/* Resume Button */
+/* ✅ Resume Button */
 .resume-btn {
   display: inline-block;
   margin-top: 20px;
@@ -303,7 +299,7 @@ form button:hover {
   background: #218838;
 }
 
-/* Footer */
+/* ✅ Footer */
 .footer {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(8px);
@@ -311,9 +307,9 @@ form button:hover {
   padding: 40px 20px;
   text-align: center;
   color: #ccc;
+  box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 .footer::before {
@@ -325,13 +321,6 @@ form button:hover {
   background: linear-gradient(135deg, #00bfff55, #ffffff11);
   opacity: 0.08;
   pointer-events: none;
-}
-
-.footer-container {
-  max-width: 800px;
-  margin: auto;
-  z-index: 1;
-  position: relative;
 }
 
 .footer h2 {
@@ -373,7 +362,7 @@ footer .copyright {
   margin-top: 10px;
 }
 
-/* Contact & Footer Link Fix */
+/* ✅ Contact Link Colors */
 #contact a,
 #contact a:visited,
 .footer a,
@@ -392,7 +381,7 @@ footer .copyright {
   text-decoration: underline;
 }
 
-/* Scroll to Top */
+/* ✅ Scroll To Top */
 #scrollToTop {
   position: fixed;
   bottom: 30px;
@@ -415,14 +404,10 @@ footer .copyright {
   background: #0056b3;
 }
 
-/* ✅ Mobile Fixes & Responsive */
+/* ✅ Responsive Fixes */
 @media (max-width: 768px) {
-  body {
-    padding-top: 60px;
-  }
-
   .hero {
-    padding-top: 140px; /* ✅ FIXED navbar overlap */
+    padding: 220px 20px 60px; /* To avoid navbar overlap */
   }
 
   .hero-content h1 {
@@ -442,6 +427,10 @@ footer .copyright {
   .navbar ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
   }
 
   .project,

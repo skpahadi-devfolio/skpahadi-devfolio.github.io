@@ -13,6 +13,7 @@
   <!-- 🔗 Navigation Bar -->
   <nav class="navbar">
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -23,7 +24,7 @@
   </nav>
 
   <!-- 🎯 Hero Section -->
-  <header class="hero">
+  <header id="home" class="hero">
     <div class="hero-content">
       <h1>Sandeep Kohli</h1>
       <p id="typing-text"></p>
@@ -41,84 +42,75 @@
   </section>
 
   <!-- 🛠 Skills -->
-  <!-- 🛠 Skills with Logos -->
-<section id="skills" class="section reveal">
-  <div class="section-card">
-    <h2>Skills</h2>
-    <div class="skill-cards">
+  <section id="skills" class="section reveal">
+    <div class="section-card">
+      <h2>Skills</h2>
+      <div class="skill-cards">
 
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-        <p>HTML</p>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+
       </div>
-
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-        <p>CSS</p>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- 📁 Projects -->
-<section id="projects" class="section reveal">
-  <div class="section-card">
-    <h2>My Projects</h2>
+  <section id="projects" class="section reveal">
+    <div class="section-card">
+      <h2>My Projects</h2>
 
-    <div class="project-grid no-image">
+      <div class="project-grid no-image">
+        <div class="project-card no-image-card">
+          <h3>Portfolio Website</h3>
+          <p>A personal developer portfolio built using HTML, CSS, and JS.</p>
+          <a href="https://skpahadi-devfolio.github.io" target="_blank">View Project</a>
+        </div>
 
-      <div class="project-card no-image-card">
-        <h3>Portfolio Website</h3>
-        <p>A personal developer portfolio built using HTML, CSS, and JS.</p>
-        <a href="https://skpahadi-devfolio.github.io" target="_blank">View Project</a>
+        <div class="project-card no-image-card">
+          <h3>Quiz App</h3>
+          <p>A simple interactive quiz application built with JavaScript.</p>
+          <a href="https://skpahadi-devfolio.github.io/quiz-app/" target="_blank">View Project</a>
+        </div>
       </div>
-
-      <div class="project-card no-image-card">
-        <h3>Quiz App</h3>
-        <p>A simple interactive quiz application built with JavaScript.</p>
-        <a href="https://skpahadi-devfolio.github.io/quiz-app/" target="_blank">View Project</a>
-      </div>
-
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- 🎓 Education -->
-<section id="education" class="section reveal">
-  <div class="section-card">
-    <h2>Education</h2>
+  <section id="education" class="section reveal">
+    <div class="section-card">
+      <h2>Education</h2>
 
-    <!-- 🎓 Graduation -->
-    <div class="edu-card">
-      <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
-      <p>Modern College of Professional Studies, Mohan Nagar, Ghaziabad</p>
-      <p>2022 – 2025</p>
+      <div class="edu-card">
+        <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+        <p>Modern College of Professional Studies, Mohan Nagar, Ghaziabad</p>
+        <p>2022 – 2025</p>
+      </div>
+
+      <div class="edu-card">
+        <p><strong>Senior Secondary (Class 12th)</strong></p>
+        <p>Sahil Public School, Noida, Khora Colony, Shital Vihar</p>
+        <p>Passed in 2022</p>
+      </div>
+
+      <div class="edu-card">
+        <p><strong>High School (Class 10th)</strong></p>
+        <p>Sahil Public School, Noida, Khora Colony, Shital Vihar</p>
+        <p>Passed in 2020</p>
+      </div>
     </div>
-
-    <!-- 🏫 Class 12 -->
-    <div class="edu-card">
-      <p><strong>Senior Secondary (Class 12th)</strong></p>
-      <p>Sahil Public School, Noida, Khora Colony, Shital Vihar</p>
-      <p>Passed in 2022</p>
-    </div>
-
-    <!-- 🏫 Class 10 -->
-    <div class="edu-card">
-      <p><strong>High School (Class 10th)</strong></p>
-      <p>Sahil Public School, Noida, Khora Colony, Shital Vihar</p>
-      <p>Passed in 2020</p>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- 💼 Experience -->
   <section id="experience" class="section reveal">
@@ -127,35 +119,29 @@
       <h3>Aditron India Pvt. Ltd. – A-23, Sector 57, Noida</h3>
       <p><strong>Role:</strong> Back Office Executive (Part-Time, Remote)</p>
       <p><strong>Duration:</strong> 2023 – Present</p>
-      <p>
-        I work remotely on a part-time basis with Aditron India Pvt. Ltd. My responsibilities include:
-      </p>
+      <p>I work remotely on a part-time basis with Aditron India Pvt. Ltd. My responsibilities include:</p>
       <ul>
         <li>Creating Tax Invoices for products like Rotary Joints of various sizes</li>
         <li>Preparing Delivery Challans and Letterheads as per requirement</li>
         <li>Handling purchase orders received from client companies (approx. 4–5 per month)</li>
         <li>Coordinating necessary documentation from Aditron’s side for clients</li>
       </ul>
-      <p>
-        Although the work is not daily, I assist as per demand and receive ₹50 per invoice, with an annual earning of approximately ₹5,000–₹6,000.
-      </p>
+      <p>Although the work is not daily, I assist as per demand and receive ₹50 per invoice, with an annual earning of approximately ₹5,000–₹6,000.</p>
     </div>
   </section>
 
   <!-- 🏅 Certificates -->
-<section id="certificates" class="section reveal">
-  <div class="section-card">
-    <h2>Certificates</h2>
+  <section id="certificates" class="section reveal">
+    <div class="section-card">
+      <h2>Certificates</h2>
 
-    <div class="edu-card">
-      <p><strong>Diploma in Computer Applications (DCA)</strong></p>
-      <p>6-Month Certification Course</p>
-      <p>Completed Successfully — Certificate Available</p>
+      <div class="edu-card">
+        <p><strong>Diploma in Computer Applications (DCA)</strong></p>
+        <p>6-Month Certification Course</p>
+        <p>Completed Successfully — Certificate Available</p>
+      </div>
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- 📬 Contact -->
   <section id="contact" class="section reveal">
@@ -177,25 +163,24 @@
     </div>
   </section>
 
-  <!-- 🌌 Modern Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <h2>Let's Connect</h2>
-    <p>Feel free to reach out for collaborations or just a friendly hello! 👋</p>
+  <!-- 🌌 Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h2>Let's Connect</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello! 👋</p>
 
-    <div class="social-icons">
-      <a href="mailto:sandeepkohli180@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/sandeep-kohli-b1064b32a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://skpahadi-devfolio.github.io" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <div class="social-icons">
+        <a href="mailto:sandeepkohli180@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/sandeep-kohli-b1064b32a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://skpahadi-devfolio.github.io" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+
+      <hr />
+      <p class="copyright">
+        © <span id="year">2025</span> Sandeep Kohli | Made with ❤️ for the Web
+      </p>
     </div>
-
-    <hr />
-    <p class="copyright">
-      © <span id="year">2025</span> Sandeep Kohli | Made with ❤️ for the Web
-    </p>
-  </div>
-</footer>
-
+  </footer>
 
   <!-- 🔼 Scroll to Top -->
   <button id="scrollToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>

@@ -20,41 +20,13 @@ function revealOnScroll() {
   });
 }
 
-// Animate skills progress bars
-function animateProgressBars() {
-  const progressBars = document.querySelectorAll(".progress");
-  progressBars.forEach(bar => {
-    const width = bar.classList.contains("html") ? "90%" :
-                  bar.classList.contains("css") ? "85%" :
-                  bar.classList.contains("js") ? "60%" : "0%";
-    bar.style.width = width;
-  });
-}
-
-// Call when section reveals
-function revealOnScroll() {
-  reveals.forEach((section) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = section.getBoundingClientRect().top;
-    const elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      section.classList.add("reveal");
-
-      if (section.id === "skills") {
-        animateProgressBars();
-      }
-    }
-  });
-}
-
-
 // 🔼 Scroll to Top Button
 const scrollBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", () => {
   revealOnScroll();
 
+  // Show or hide scroll-to-top button
   if (window.scrollY > 300) {
     scrollBtn.style.display = "block";
   } else {
@@ -70,10 +42,7 @@ scrollBtn.addEventListener("click", () => {
   });
 });
 
-// Initial reveal on load
-window.addEventListener("load", revealOnScroll);
-
-// 🖋️ Typing effect in hero section
+// 🔠 Typing effect
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Aspiring Web & App Developer";
   let index = 0;
@@ -91,3 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
   typeText();
 });
 
+// 🚀 Initial reveal on load
+window.addEventListener("load", revealOnScroll);
